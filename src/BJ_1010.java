@@ -17,7 +17,7 @@ public class BJ_1010 {
     }
     public static int combi(int n, int m){
         if(n == m || m == 0 ) return dp[n][m]=1;
-        if(dp[n][m] != 0) return dp[n][m];j
+        if(dp[n][m] != 0) return dp[n][m];
         return dp[n][m] =  combi(n - 1, m - 1) + combi(n - 1, m);
     }
 }
