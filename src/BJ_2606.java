@@ -32,6 +32,7 @@ public class BJ_2606 {
 
     public static void DFS(int num){
         for (int i: map.getOrDefault(num, new ArrayList<>())){
+//        for (int i: map.get(num)){
             if(!visited[i]){
                 visited[i] = true;
                 answer++;
